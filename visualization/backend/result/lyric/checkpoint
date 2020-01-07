@@ -1,0 +1,6 @@
+model_checkpoint_path: "lyrics-40"
+all_model_checkpoint_paths: "lyrics-0"
+all_model_checkpoint_paths: "lyrics-10"
+all_model_checkpoint_paths: "lyrics-20"
+all_model_checkpoint_paths: "lyrics-30"
+all_model_checkpoint_paths: "lyrics-40"

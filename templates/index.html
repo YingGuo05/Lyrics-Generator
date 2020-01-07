@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lyrics Generator</title>
+</head>
+<body>
+    <div align="center">
+        <div style="position: relative; top: 20px;">
+            <img src="{{url_for('static', filename='pic1.png')}}" style="width: 600px; height: 400px">
+            <div>This Lyrics Generator can generate lyrics with one given character.</div><br>
+            <div>Instructions: Select one starting character from the list, then click the Generate button to have fun!</div><br>
+            <div>This is the final project of Ying Guo, Yijia Ruan and Zihao Zhao for Comp/ELEC 576.</div><br>
+        </div>
+        <div style="position: relative; top: 20px;">
+            <form action="/load/" method="post">
+                <select name="char_menu" required>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                    <option value="e">e</option>
+                    <option value="f">f</option>
+                    <option value="g">g</option>
+                    <option value="h">h</option>
+                    <option value="i">i</option>
+                    <option value="j">j</option>
+                    <option value="k">k</option>
+                    <option value="l">l</option>
+                    <option value="m">m</option>
+                    <option value="n">n</option>
+                    <option value="o">o</option>
+                    <option value="p">p</option>
+                    <option value="q">q</option>
+                    <option value="r">r</option>
+                    <option value="s">s</option>
+                    <option value="t">t</option>
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                    <option value="x">x</option>
+                    <option value="y">y</option>
+                    <option value="z">z</option>
+            </select>
+                <button type="submit">Generate</button>
+            </form>
+        </div>
+        <br>
+        <div style="position: relative; top: 20px;">
+            <div> Lyrics will appear here in several seconds: </div><br>
+            <div>{{ lyrics|safe }}</div>
+        </div>
+    </div>
+</body>
+</html>
